@@ -8,6 +8,8 @@ export default function Start({ navigation }) {
 
 	useEffect(() => {
 		const initialize = async () => {
+            //await StorageManager.clearAll();
+
 			const theme = await ColorManager.getTheme();
 			setTheme(theme);
 
